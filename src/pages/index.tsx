@@ -41,7 +41,7 @@ export default function Home(): ReactNode {
         <HomepageFeatures />
         <div style={{display: 'flex', justifyContent: 'center', padding: '2rem', flexDirection: 'column', alignItems: 'center'}}>
             <Heading as="h2">GitHub Contribution</Heading>
-            <GitHubCalendar username="facebook" />
+            <GitHubCalendar username="Kepler174" />
         </div>
       </main>
     </Layout>

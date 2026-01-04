@@ -10,10 +10,10 @@ export default function Comments(): JSX.Element {
     <div style={{marginTop: '30px'}}>
       <Giscus
         id="comments"
-        repo="your-github-username/your-repo-name"
-        repoId="YOUR_REPO_ID"
+        repo="Kepler174/my-tech-site"
+        repoId="R_kgDOQzRzNA"
         category="Announcements"
-        categoryId="YOUR_CATEGORY_ID"
+        categoryId="DIC_kwDOQzRzNM4C0jEE"
         mapping="pathname"
         strict="0"
         reactionsEnabled="1"
