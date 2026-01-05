@@ -88,6 +88,7 @@ const config: Config = {
           label: '文档',
         },
         {to: '/blog', label: '博客', position: 'left'},
+        {to: '/tools', label: '实验室', position: 'left'},
         {
           href: 'https://github.com/Kepler174',
           label: 'GitHub',
