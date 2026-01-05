@@ -1,19 +1,9 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+git:
+  label: Git
+  permalink: /git
+  description: Git 版本控制教程与心得
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
-
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
-
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+c-lang:
+  label: C语言
+  permalink: /c-lang
+  description: C语言编程基础与进阶笔记
