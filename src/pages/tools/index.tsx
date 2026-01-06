@@ -17,6 +17,12 @@ const ToolsList = [
     icon: '🧬',
   },
   {
+    title: '键盘测试器',
+    description: '检测按键的 KeyCode、Code 和修饰键状态。',
+    link: '/tools/keyboard-tester',
+    icon: '⌨️',
+  },
+  {
     title: 'Web 终端 (计划中)',
     description: '极客风格的网页版命令行入口。',
     link: '#',
