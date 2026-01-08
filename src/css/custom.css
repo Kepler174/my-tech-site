@@ -1,5 +1,6 @@
 :root {
-  --ifm-color-primary: #00c853;
+  --ifm-color-primary: #00c853;  --ifm-h1-font-size: 2.2rem;
+  --ifm-h2-font-size: 1.8rem;
   --ifm-color-primary-dark: #00b44b;
   --ifm-color-primary-darker: #00aa46;
   --ifm-color-primary-darkest: #008c3a;
@@ -8,6 +9,14 @@
   --ifm-color-primary-lightest: #1aff75;
   --ifm-code-font-size: 95%;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  /* 将容器宽度设置为 100%，消除两侧的留白限制 */
+  --ifm-container-width: 100%;
+  --ifm-spacing-horizontal: 1rem; /* 减小两侧默认的内边距 */
+}
+
+.container {
+  max-width: 100%;
+  padding: 0 1rem; /* 强制覆盖容器内边距 */
 }
 
 [data-theme='dark'] {
@@ -20,4 +29,56 @@
   --ifm-color-primary-lightest: #52ff9f;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
   --ifm-background-color: #0d1117;
+}
+
+/* 移除以前可能导致列表项之间出现不必要分割线的全局样式 */
+/* article + article { ... } rule removed */
+
+/* 强制统一卡片描述的高度，解决因为文字长短不一导致的框体大小不一致问题 */
+.card .text--truncate {
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    height: 3em; /* 这里的 height 根据行高调整，大约是两行的高度 */
+}
+
+/* ==========================================================================
+   Widget Box Styles (Shared between Left Sidebar and Right Widgets)
+   ========================================================================== */
+
+.blog-widget-box {
+  background: var(--ifm-card-background-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: var(--ifm-card-border-radius);
+  box-shadow: var(--ifm-global-shadow-lw);
+  padding: 1rem;
+  transition: all 0.3s ease;
+  margin-bottom: 1.5rem;
+}
+
+.blog-widget-box:hover {
+  box-shadow: var(--ifm-global-shadow-md);
+  border-color: var(--ifm-color-primary);
+}
+
+.blog-widget-header {
+  font-weight: bold;
+  border-bottom: 2px solid var(--ifm-color-emphasis-200);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: var(--ifm-color-primary);
+}
+
+/* Left Sidebar specific adjustments */
+.blog-left-sidebar {
+  /* Make sure sticky positioning works with the box style if applied directly */
+  max-height: calc(100vh - (var(--ifm-navbar-height) + 2rem));
+  overflow-y: auto;
+  position: sticky;
+  top: calc(var(--ifm-navbar-height) + 2rem);
+p: 2rem;
+  padding-top: 2rem;
 }

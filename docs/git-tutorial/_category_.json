@@ -1,0 +1,8 @@
+{
+  "label": "Pro Git",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "深入理解 Git 核心原理与工作流"
+  }
+}

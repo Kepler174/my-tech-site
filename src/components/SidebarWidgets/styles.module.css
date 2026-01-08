@@ -1,0 +1,104 @@
+/* styles.module.css */
+/* Minimal styles, main box styles moved to global custom.css */
+
+.rightSidebar {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+}
+
+/* Tag Cloud Items */
+.tagCloud {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tagItem {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  background-color: var(--ifm-color-emphasis-100);
+  border-radius: 12px;
+  font-size: 0.85rem;
+  color: var(--ifm-font-color-base);
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+
+.tagItem:hover {
+  background-color: var(--ifm-color-primary);
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Calendar Grid */
+.calendarGrid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.weekDay {
+  font-weight: bold;
+  color: var(--ifm-color-emphasis-600);
+  margin-bottom: 0.2rem;
+}
+
+.calendarDay {
+  padding: 0.3rem;
+  border-radius: 4px;
+}
+
+.calendarDay:hover {
+  background-color: var(--ifm-color-emphasis-100);
+}
+
+.today {
+  background-color: var(--ifm-color-primary);
+  color: white;
+  font-weight: bold;
+}
+.today:hover {
+  background-color: var(--ifm-color-primary-dark);
+}
+
+/* Clock */
+.clockDisplay {
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+.timeText {
+  font-size: 2rem;
+  font-family: monospace;
+  font-weight: bold;
+  color: var(--ifm-color-primary);
+  letter-spacing: 2px;
+}
+
+.dateText {
+  margin-top: 0.5rem;
+  color: var(--ifm-color-emphasis-600);
+  font-size: 0.9rem;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.spin {
+  animation: spin 1s linear infinite;
+}
+
+/* Sticky sidebar */
+.rightSidebar {
+  max-height: calc(100vh - (var(--ifm-navbar-height) + 2rem));
+  overflow-y: auto;
+  position: sticky;
+  top: calc(var(--ifm-navbar-height) + 2rem);
+  /* Hide scrollbar for cleaner look if not needed */
+  scrollbar-width: thin; 
+}
