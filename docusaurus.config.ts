@@ -87,7 +87,7 @@ const config: Config = {
           position: 'left',
           label: '文档',
         },
-        {to: '/blog', label: '博客', position: 'left'},
+        // {to: '/blog', label: '博客', position: 'left'},
         {to: '/tools', label: '实验室', position: 'left'},
         {
           href: 'https://github.com/Kepler174',
@@ -102,13 +102,13 @@ const config: Config = {
         {
           title: '本站',
           items: [
-            {
-              label: '博客',
-              to: '/blog',
-            },
+            // {
+            //   label: '博客',
+            //   to: '/blog',
+            // },
             {
               label: '文档',
-              to: '/docs/intro',
+              to: '/docs/git-tutorial/progit-1-1-version-control',
             },
           ],
         },
