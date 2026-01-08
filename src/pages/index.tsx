@@ -21,8 +21,8 @@ function HomepageHeader() {
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
-            to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            to="/docs/git-tutorial/progit-1-1-version-control">
+            开始阅读 Pro Git 笔记 📚
           </Link>
         </div>
       </div>
